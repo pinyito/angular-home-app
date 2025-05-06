@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HousingLocationComponent } from '../housing-location/housing-location.component';
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css'],
-    standalone: true
+    standalone: true,
+    imports: [
+      CommonModule,
+      HousingLocationComponent
+    ]
 })
 export class HomeComponent {
 
